@@ -46,30 +46,17 @@ Read-only. Non-custodial. Open-source.
 
 ### Core Components
 
-Source L1
-└─ ICM Emit
-     ↓
-ICM Indexer Network
-     ↓
-Message State Machine
-     ↓
-Failure Classification Engine
-     ↓
-Forked Replay Engine
-     ↓
-Proof Generator
-     ↓
-APIs / CLI / Metrics
-
-
-
+Source L1 -> ICM Emit -> ICM Indexer Network -> Message State Machine -> Failure Classification Engine -> Forked Replay Engine -> Proof Generator -> APIs / CLI / Metrics
 ---
 
 ### Message Lifecycle
 
-CREATED → RELAYED → EXECUTED
-↘ FAILED
-↘ EXPIRED
+CREATED -> RELAYED -> EXECUTED
+                     |
+                     +-> FAILED
+                     |
+                     +-> EXPIRED
+
 
 
 State transitions are deterministic and evidence-driven.
