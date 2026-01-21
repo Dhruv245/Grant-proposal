@@ -48,18 +48,19 @@ Read-only. Non-custodial. Open-source.
 
 Source L1
 └─ ICM Emit
-↓
+     ↓
 ICM Indexer Network
-↓
+     ↓
 Message State Machine
-↓
+     ↓
 Failure Classification Engine
-↓
+     ↓
 Forked Replay Engine
-↓
+     ↓
 Proof Generator
-↓
+     ↓
 APIs / CLI / Metrics
+
 
 
 ---
